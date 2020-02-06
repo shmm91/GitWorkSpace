@@ -118,3 +118,123 @@ git clone https://github.com/fsliurujie/test.git
 ```
 
 git add 命令将内容写入缓存区，git commit将缓存区内容添加到仓库中。
+
+### Git分支管理
+
+列出分支基本命令：
+
+```
+git branch
+```
+
+手动创建一个分支
+
+```
+git branch testing
+```
+
+切换分支
+
+```
+git checkout testing
+```
+
+创建分支并切换到该分支下
+
+```
+git checkout -b testing
+```
+
+删除分支
+
+```
+git branch -d testing
+```
+
+合并分支（将testing合并到主分支）
+
+```
+git merge testing
+```
+
+### Git标签
+
+创建带注释的标签
+
+```
+git tag -a v1.0
+```
+
+追加标签
+
+```
+git tag -a v1.0 56454td
+```
+
+查看标签
+
+```
+git tag
+```
+
+### Git远程仓库
+
+在git-bash下执行以下命令生成SSH Key
+
+```
+ssh-keygen -t rsa -C "shmm91@sina.com"
+```
+
+将生成的id_rsa.pub复制到github账户设置SSH and GPG keys里。
+
+输入以下命令测试是否成功：
+
+```
+ssh -T git@github.com
+```
+
+将本地仓库推送到github
+
+```
+git remote add origin https://github.com/shmm91/GitWorkSpace.git
+git push -u origin master
+```
+
+查看当前配置有哪些远程仓库
+
+```
+git remote
+```
+
+添加-v参数，查看实际链接地址
+
+```
+git remote -v
+```
+
+从远程仓库下载分支与数据，该命令执行完需要执行git merge远程分支到你所在的分支。
+
+```
+git fetch
+git fetch origin
+```
+
+从远端仓库提取数据并尝试合并到当前分支
+
+```
+git merges
+git merge origin/master
+```
+
+推送新分支与数据到某个远端仓库：
+
+```
+git push origin master
+```
+
+删除远程仓库
+
+```
+git remote rm ###
+```
+
