@@ -229,12 +229,13 @@ git merge origin/master
 推送新分支与数据到某个远端仓库：
 
 ```
-git push origin master
+git commit -m "***"
+git push -u origin master
 ```
 
 删除远程仓库
 
 ```
-git remote rm ###
+git remote rm "***"
 ```
 
