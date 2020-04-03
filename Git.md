@@ -48,7 +48,7 @@ git config --list
 * 提交修改。
 * 在修改完成后，如果发现错误，可以撤回提交并再次修改并提交。
 
-工作流程如下图：![](C:\Users\shmm\Desktop\笔记\git-process.png)
+工作流程如下图：![](/home/uavlab/文档/GitWorkSpace/git-process.png)
 
 ### Git分区
 
@@ -58,7 +58,7 @@ git config --list
 
 版本库：工作区有一个隐藏目录.git，是Git的版本库。
 
-![](C:\Users\shmm\Desktop\笔记\gitworkspace.jpg)
+![](/home/uavlab/文档/GitWorkSpace/gitworkspace.jpg)
 
 上图中左侧为工作区，右侧为版本库，在版本库中标记为index的区域是暂存区-stage/index，标记为master的是master分支代表的目录树。
 
