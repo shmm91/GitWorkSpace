@@ -236,6 +236,6 @@ git push -u origin master
 删除远程仓库
 
 ```
-git remote rm "***"
+git remove rm "***"
 ```
 
